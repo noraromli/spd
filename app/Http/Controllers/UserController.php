@@ -14,11 +14,11 @@ class UserController extends Controller
 
     public function login() 
     {
-    	return 'Login';
+    	return view('frontend.login');
     }
 
     public function register() 
     {
-    	return 'register';
+    	return view('frontend.register');
     }
 }
