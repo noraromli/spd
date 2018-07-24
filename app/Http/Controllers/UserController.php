@@ -9,7 +9,7 @@ class UserController extends Controller
     // create function index
     public function index() 
     {
-    	return 'Hello world';
+    	return view('frontend.index');
     }
 
     public function login() 
