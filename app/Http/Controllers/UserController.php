@@ -21,4 +21,9 @@ class UserController extends Controller
     {
     	return view('frontend.register');
     }
+
+    public function home() 
+    {
+    	return view('frontend.index');
+    }
 }

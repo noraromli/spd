@@ -24,3 +24,4 @@ Route::get('/', 'PortalController@home');
 Route::get('/user', 'UserController@index'); // Ctrl+Shift+D - Duplicate file to new line
 Route::get('/user/login', 'UserController@login')->name('user.login');
 Route::get('/user/register', 'UserController@register')->name('user.register');
+Route::get('/user/home', 'UserController@home')->name('user.home');
