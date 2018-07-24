@@ -18,10 +18,10 @@ Route::get('/', function () { /* :: - static == sama function dengan -> eg: $rou
 }); 
 */
 
-Route::get('/', 'PortalController@home');
+Route::get('/', 'PortalController@index')->name('index');
 
 // User route
-Route::get('/', 'UserController@index')->name('index'); // Ctrl+Shift+D - Duplicate file to new line
+//Route::get('/user', 'UserController@index')->name('index'); // Ctrl+Shift+D - Duplicate file to new line
 Route::get('/user/login', 'UserController@login')->name('user.login');
 Route::get('/user/register', 'UserController@register')->name('user.register');
 //Route::get('/user/index', 'UserController@index')->name('user.index');
