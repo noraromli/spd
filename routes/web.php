@@ -23,6 +23,9 @@ Route::get('/', 'PortalController@index')->name('index');
 // User route
 //Route::get('/user', 'UserController@index')->name('index'); // Ctrl+Shift+D - Duplicate file to new line
 Route::get('/user/login', 'UserController@login')->name('user.login');
+Route::get('/user/logout', 'UserController@logout')->name('user.logout');
 Route::get('/user/register', 'UserController@register')->name('user.register');
 //Route::get('/user/index', 'UserController@index')->name('user.index');
 Route::post('/user/register', 'UserController@registerPost')->name('user.register.post');
+Route::post('/user/login', 'UserController@loginPost')->name('user.login.post');
+Route::get('/user/dashboard', 'UserController@dashboard')->name('user.dashboard');

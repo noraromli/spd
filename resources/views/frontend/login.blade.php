@@ -1,12 +1,15 @@
 @extends('frontend.layout') <!-- extend index.blade.php ke layout.blade.php -->
 
 @section('content')
+@include('common.alert')
+@include('common.form_error')
 
     <!-- Page Content -->
     <section class="py-5">
       <div class="container">
         <h1>Login</h1>
-        <form>
+        <form method="POST" action="{{route('user.login.post')}}">
+          @csrf
           <div class="form-group row">
             <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
             <div class="col-sm-10">
